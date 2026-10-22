@@ -26,12 +26,20 @@ public:
         sizes++;
     }
     void pop(){
+        if(empty()){
+            cout << "LinkedList Rong" << endl;
+            return;
+        }
         Node* temp =head;
         head=head->next;
         delete(temp);
         sizes--;
     }
     int top(){
+        if(empty()){
+            cout << "LinkedList Rong" << endl;
+            return 0;
+        }
         return head->data;
     }
     int size(){
