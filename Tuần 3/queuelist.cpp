@@ -85,4 +85,5 @@ int main() {
 
     cin.get();
     return 0;
-}êu
+}
+\\O(1)
