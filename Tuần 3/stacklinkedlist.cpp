@@ -38,7 +38,7 @@ public:
     int top(){
         if(empty()){
             cout << "Stack Rong" << endl;
-            return 0;
+            return -1;
         }
         return head->data;
     }
