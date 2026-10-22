@@ -27,7 +27,7 @@ public:
     }
     void pop(){
         if(empty()){
-            cout << "LinkedList Rong" << endl;
+            cout << "Stack Rong" << endl;
             return;
         }
         Node* temp =head;
@@ -37,7 +37,7 @@ public:
     }
     int top(){
         if(empty()){
-            cout << "LinkedList Rong" << endl;
+            cout << "Stack Rong" << endl;
             return 0;
         }
         return head->data;
