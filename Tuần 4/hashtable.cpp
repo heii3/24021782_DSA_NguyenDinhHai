@@ -11,7 +11,11 @@ struct Node {
 Node *table[M] = {NULL};
 
 int hashFunction(int x) {
-    return (x % M + M) % M;
+    if (x >= 0) {
+        return x % M;
+    } else {
+        return -(x % M);
+    }
 }
 
 void insert(int x) {
